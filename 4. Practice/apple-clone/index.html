@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="icon" type="image/png" href="./data/image/icon.png" />
+    <link rel="stylesheet" href="./public/css/navbar.css">
+    <link rel="stylesheet" href="./public/css/main.css">
+    <link rel="stylesheet" href="./public/css/landing-page/slideShow.css">
+    <link rel="stylesheet" href="./public/css/landing-page/main-footer.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar HTML -->
+
+    <header>
+        <nav>
+            <div id="logo">MyBrand</div>
+            <button class="toggle-btn" onclick="toggleMenu()">☰</button>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Slideshow HTML -->
+
+    <div class="slideshow-container">
+        <div class="slide active">
+            <img src="https://images.unsplash.com/photo-1555967522-37949fc21dcb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Slide 1">
+        </div>
+        <div class="slide">
+            <img src="https://images.unsplash.com/photo-1607473129014-0afb7ed09c3a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Slide 2">
+        </div>
+        <div class="slide">
+            <img src="https://images.unsplash.com/photo-1507738978512-35798112892c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Slide 3">
+        </div>
+
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+
+        <div class="dots-container">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </div>
+
+
+    <!-- Main Content -->
+    <main>
+        <section class="hero">
+            <h1>Welcome to MyBrand</h1>
+            <p>Your one-stop shop for the best products.</p>
+        </section>
+
+        <section class="categories">
+            <h2>Shop by Category</h2>
+            <div class="category-list">
+                <div class="category">
+                    <img src="https://via.placeholder.com/150" alt="Category 1">
+                    <h3>Electronics</h3>
+                </div>
+                <div class="category">
+                    <img src="https://via.placeholder.com/150" alt="Category 2">
+                    <h3>Fashion</h3>
+                </div>
+                <div class="category">
+                    <img src="https://via.placeholder.com/150" alt="Category 3">
+                    <h3>Home Appliances</h3>
+                </div>
+                <div class="category">
+                    <img src="https://via.placeholder.com/150" alt="Category 4">
+                    <h3>Sports</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="https://via.placeholder.com/150" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>$99.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/150" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>$199.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/150" alt="Product 3">
+                    <h3>Product 3</h3>
+                    <p>$299.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/150" alt="Product 4">
+                    <h3>Product 4</h3>
+                    <p>$399.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/150" alt="Product 5">
+                    <h3>Product 5</h3>
+                    <p>$299.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/150" alt="Product 6s">
+                    <h3>Product 6</h3>
+                    <p>$299.99</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+        <p>&copy; 2024 MyBrand. All rights reserved.</p>
+    </footer>
+
+    <!-- toggle menu -->
+    <script src="./public/js/toggleMenu.js"></script>
+    <!-- slideshow  -->
+    <script src="./public/js/slideShow.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        header #logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .products-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            background-color: #f4f4f4;
+        }
+
+        .product-details {
+            padding: 15px;
+        }
+
+        .product-details h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .product-details p {
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .product-details .price {
+            font-weight: bold;
+            color: #000;
+        }
+
+        .card-rating {
+            margin-bottom: 10px;
+        }
+
+        .stars {
+            color: #ffcc00;
+            font-size: 14px;
+        }
+
+        .add-to-cart-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border: none;
+            border-radius: 0 0 8px 8px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .add-to-cart-btn:hover {
+            background-color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .product-card {
+                margin: 10px;
+            }
+
+            .product-details h3 {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo">MyBrand</div>
+    </header>
+
+    <main>
+        <div class="products-container" id="productsContainer"></div>
+    </main>
+
+    <footer>
+        &copy; 2024 MyBrand. All rights reserved.
+    </footer>
+
+    <script>
+        // Fetch JSON data and display products
+        document.addEventListener("DOMContentLoaded", () => {
+            const productsContainer = document.getElementById("productsContainer");
+
+            // Sample JSON URL (replace with your actual JSON endpoint or local file path)
+            const jsonURL = "https://fakestoreapi.com/products";
+
+            // Function to generate star ratings
+            function generateStars(rate) {
+                const fullStar = '★';
+                const emptyStar = '☆';
+                const stars = fullStar.repeat(Math.floor(rate)) + emptyStar.repeat(5 - Math.floor(rate));
+                return stars;
+            }
+
+            fetch(jsonURL)
+                .then(response => response.json())
+                .then(data => {
+                    const products = data; // Assuming the products are in the "data" array
+
+                    console.log(data)
+
+                    products.forEach(product => {
+                        const productCard = document.createElement("div");
+                        productCard.classList.add("product-card");
+
+                        productCard.innerHTML = `
+                            <img class="product-image" src="${product.image}" alt="${product.brand}">
+                            <div class="product-details">
+                                <h3>${product.title.slice(0, 15)}...</h3>
+                                <p>${product.description.slice(0, 50)}...</p>
+                                <p class="price">$${product.price}</p>
+                                <div class="card-rating">
+        <span class="stars">${generateStars(product.rating.rate)}</span>
+        (${product.rating.count} ratings)
+      </div>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        `;
+
+                        productsContainer.appendChild(productCard);
+                    });
+                })
+                .catch(error => {
+                    console.error("Error fetching the JSON data:", error);
+                });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+
+{
+    "data": [
+        {
+            "id": 1,
+            "brand": "Buy HomePod",
+            "img": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/homepod-select-midnight-202210?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1670557210097",
+            "price": 100,
+            "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, sequi.",
+            "category": "Laptop"
+        },
+        {
+            "id": 2,
+            "brand": "AirPods Pro (2nd generation)",
+            "img": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MQD83?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1660803972361",
+            "price": 120,
+            "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, sequi.",
+            "category": "Mobile"
+        },
+        {
+            "id": 3,
+            "brand": "iPad Pro",
+            "img": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/homepod-mini-select-yellow-202110?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1632925510000",
+            "price": 130,
+            "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, sequi.",
+            "category": "Head_Phones"
+        },
+        {
+            "id": 4,
+            "brand": "Zebronics",
+            "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/6/1/619660798426_1_727221ba.jpg?rnd=20200526195200",
+            "price": 100,
+            "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, sequi.",
+            "category": "Speakers"
+        },
+        {
+            "id": 5,
+            "brand": "Zebronics",
+            "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/c/_/c_8907605107849_1_655fcbdf.jpg?rnd=20200526195200",
+            "price": 200,
+            "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, sequi.",
+            "category": "Smart_TV"
+        },
+        {
+            "id": 6,
+            "brand": "Apple",
+            "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/c/o/cor-nyfcrca000039_1_369033fe.jpg?rnd=20200526195200",
+            "price": 235,
+            "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, sequi.",
+            "category": "Laptop"
+        },
+        {
+            "id": 7,
+            "brand": "Apple",
+            "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/a/m/ambrane_8904258106557_1_aff3c266.jpg?rnd=20200526195200",
+            "price": 250,
+            "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, sequi.",
+            "category": "Mobile"
+        },
+        {
+            "id": 8,
+            "brand": "Apple",
+            "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/n/y/nyfblta000009_1.jpg?rnd=20200526195200",
+            "price": 100,
+            "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, sequi.",
+            "category": "Head_Phones"
+        },
+        {
+            "id": 9,
+            "brand": "Apple",
+            "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/z/b/zb_8906108615899_1_44867a4c.jpg?rnd=20200526195200",
+            "price": 325,
+            "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, sequi.",
+            "category": "Speakers"
+        },
+        {
+            "id": 10,
+            "brand": "Apple",
+            "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/u/d/ud_bk_1_2f275806.jpg?rnd=20200526195200",
+            "price": 350,
+            "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, sequi.",
+            "category": "Smart_TV"
+        },
+        {
+            "id": 11,
+            "brand": "HP",
+            "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/g/r/grey_1_398b5873.jpg?rnd=20200526195200",
+            "price": 375,
+            "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, sequi.",
+            "category": "Laptop"
+        },
+        {
+            "id": 12,
+            "brand": "HP",
+            "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/b/o/boult-audio-ba-nk-freepods-black_1_17c2dc71.jpg?rnd=20200526195200",
+            "price": 100,
+            "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, sequi.",
+            "category": "Mobile"
+        },
+        {
+            "id": 13,
+            "brand": "HP",
+            "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/d/i/dive_green_1.jpg?rnd=20200526195200",
+            "price": 500,
+            "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, sequi.",
+            "category": "Head_Phones"
+        },
+        {
+            "id": 14,
+            "brand": "HP",
+            "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/p/e/pebble-8906086572115_1_34a9b9fd.jpg?rnd=20200526195200",
+            "price": 1000,
+            "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, sequi.",
+            "category": "Speakers"
+        },
+        {
+            "id": 15,
+            "brand": "HP",
+            "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/p/p/pportronics-por-1195_1_e9dc8e9f.jpg?rnd=20200526195200",
+            "price": 750,
+            "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, sequi.",
+            "category": "Smart_TV"
+        },
+        {
+            "id": 16,
+            "brand": "Dell",
+            "img": "https://adn-static1.nykaa.com/nykdesignstudio-images/tr:w-550,/pub/media/catalog/product/m/u/musebud_grey.jpg?rnd=20200526195200",
+            "price": 1500,
+            "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, sequi.",
+            "category": "Laptop"
+        }
+    ],
+    "ipad":[
+        {
+            "title" : "iPad Pro",
+            "desc": "The ultimate iPad experience with the most advanced technology.",
+            "img":"https://www.apple.com/in/ipad-pro/images/overview/keyboard-pencil/accessories_hero__f5hy8spj2ouy_large.png",
+            "price":"81900",
+            "rating":"4.5",
+            "id":"1"
+        },
+
+        {
+            "title" : "iPad Air",
+            "desc": "Serious performance in a thin and light design.",
+            "img":"https://www.apple.com/v/ipad-air/s/images/overview/features/iris__fnhnshkpwl6y_large.jpg",
+            "price":"59900",
+            "rating":"4.5",
+            "id":"2"
+        },
+        {
+            "title" : "iPad 10th generation",
+            "desc": "The all‑new colourful iPad for the things you do every day.",
+            "img":"https://www.apple.com/v/ipad-10.9/b/images/overview/hero/hero__ecv967jz1y82_large.jpg",
+            "price":"44900",
+            "rating":"4.5",
+            "id":"3"
+        },
+        {
+            "title" : "iPad 9th generation",
+            "desc": "All the essentials in the most affordable iPad.",
+            "img":"https://www.apple.com/v/ipad-pro/al/images/overview/hero/hero_startframe__gck1t26hu3am_large.jpg",
+            "price":"33900",
+            "rating":"4.5",
+            "id":"4"
+        },
+        {
+            "title" : "iPad mini",
+            "desc": "The full iPad experience designed to fit in one hand.",
+            "img":"https://www.apple.com/v/ipad-pro/al/images/overview/hero/hero_startframe__gck1t26hu3am_large.jpg",
+            "price":"49900",
+            "rating":"4.5",
+            "id":"5"
+        }
+
+
+
+
+    ]
+}
